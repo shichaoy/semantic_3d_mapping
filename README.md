@@ -5,7 +5,7 @@ This package builds a semantic 3D grid map using stereo or RGBD input. It is sui
 
 **Related Paper:**
 
-* **Semantic 3D Occupancy Mapping through Efficient High Order CRFs **, IROS 2017, S. Yang, Y. Huang, S. Scherer  [**PDF**](http://www.frc.ri.cmu.edu/~syang/Publications/iros_2017.pdf)
+* **Semantic 3D Occupancy Mapping through Efficient High Order CRFs**, IROS 2017, S. Yang, Y. Huang, S. Scherer  [**PDF**](http://www.frc.ri.cmu.edu/~syang/Publications/iros_2017.pdf)
 
 
 # Installation
@@ -38,7 +38,7 @@ roslaunch grid_sensor grid_imgs.launch
 ```
 You will see point cloud in Rviz. It also projects 3D grid onto 2D image for evaluation, stored at ```grid_sensor/dataset/crf_3d_reproj ```.
 
-Some mode parameters can be changed under ```grid_sensor/params/ ```
+Some mode parameters can be changed in ```grid_imgs.launch``` and ```grid_sensor/params/ ```
 
 
 
