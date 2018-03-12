@@ -1,0 +1,36 @@
+<package>
+  <name>scrollgrid</name>
+  <version>0.0.0</version>
+  <description>
+      scrollgrid is best scrolling grid
+  </description>
+  <maintainer email="dimatura@cmu.edu">Daniel Maturana</maintainer>
+
+  <license>TODO</license>
+
+  <url type="website">http://ros.org/wiki/scrollgrid</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author email="dimatura@cmu.edu">Daniel Maturana</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>pcl_util</build_depend>
+  <build_depend>geom_cast</build_depend>
+  <build_depend>eigen</build_depend>
+  <build_depend>cmake_modules</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>roscpp</run_depend>
+  <run_depend>pcl_util</run_depend>
+  <run_depend>geom_cast</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>roscpp</test_depend> -->
+  <!-- <test_depend>pcl_util</test_depend> -->
+  <!-- <test_depend>geom_cast</test_depend> -->
+
+</package>

@@ -1,0 +1,13 @@
+- git: {local-name: dense_crf, uri: 'git@bitbucket.org:castacks/dense_crf.git'}
+- git: {local-name: gridmapping2, uri: 'git@bitbucket.org:castacks/gridmapping2.git', version: 'sb_grid_label'}
+- git: {local-name: rgbd_grid_visualization, uri: 'git@bitbucket.org:castacks/rgbd_grid_visualization.git',version: 'sb_grid_label'}
+- git: {local-name: rgbd_grid_sensor, uri: 'git@bitbucket.org:castacks/rgbd_grid_sensor.git',version: 'sb_grid_label'}
+
+- git: {local-name: dependency/pcl_util, uri: 'git@bitbucket.org:castacks/pcl_util.git'}
+- git: {local-name: dependency/geom_cast, uri: 'git@bitbucket.org:castacks/geom_cast.git'}
+- git: {local-name: dependency/geom_cast_extra, uri: 'git@bitbucket.org:castacks/geom_cast_extra.git'}
+- git: {local-name: dependency/tictoc_profiler, uri: 'git@bitbucket.org:castacks/tictoc_profiler.git'}
+- git: {local-name: dependency/scrollgrid, uri: 'git@bitbucket.org:castacks/scrollgrid.git', version: 'sb_simple_obstacle'}
+- git: {local-name: dependency/rviz_marker_util, uri: 'git@bitbucket.org:castacks/rviz_marker_util.git'}
+- git: {local-name: dependency/tf_utils, uri: 'git@bitbucket.org:castacks/tf_utils.git'}
+- git: {local-name: dependency/gridmapping_msgs, uri: 'git@bitbucket.org:castacks/gridmapping_msgs.git'}

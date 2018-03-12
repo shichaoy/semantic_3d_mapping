@@ -1,0 +1,6 @@
+<launch>
+      <node pkg="gridmapping2" type="gridmapping2_shared_gridmap_node" name="shared_gridmap" output="screen"/>
+      <node pkg="gridmapping2" type="gridmapping2_proxy_example1" name="proxy1" output="screen"/>
+      <node pkg="gridmapping2" type="gridmapping2_proxy_example2" name="proxy2" output="screen"/>
+
+</launch>

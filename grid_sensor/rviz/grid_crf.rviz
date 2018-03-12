@@ -1,0 +1,247 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 0
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /TF1/Frames1
+        - /TF1/Tree1
+      Splitter Ratio: 0.479482
+    Tree Height: 517
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.588679
+  - Class: rviz/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: Raw_image
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz/Axes
+      Enabled: false
+      Length: 5
+      Name: Axes
+      Radius: 0.05
+      Reference Frame: world
+      Value: false
+    - Class: rviz/TF
+      Enabled: false
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        {}
+      Update Interval: 0
+      Value: false
+    - Alpha: 0.5
+      Cell Size: 2
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: false
+      Line Style:
+        Line Width: 0.03
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 200
+      Reference Frame: world
+      Value: false
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /grid_visualize/boundary_marker
+      Name: Boundary_marker
+      Namespaces:
+        bb: true
+      Queue Size: 100
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: RGB8
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: rgb_grid
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.1
+      Style: Boxes
+      Topic: /grid_visualize/obst_points
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /raw_img
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Raw_image
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /raw_label_img
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Raw_Segmentation
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+    - Angle Tolerance: 0.01
+      Class: rviz/Odometry
+      Color: 255; 0; 0
+      Enabled: false
+      Keep: 10
+      Length: 2
+      Name: Odometry
+      Position Tolerance: 0.01
+      Topic: /odom_pose
+      Value: false
+    - Arrow Length: 0.5
+      Class: rviz/PoseArray
+      Color: 0; 255; 0
+      Enabled: true
+      Name: Slam_PoseArray
+      Topic: /slam_pose
+      Unreliable: false
+      Value: true
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /superpixel_img
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Superpixel
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 200; 200; 200
+    Fixed Frame: world
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Topic: /initialpose
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 36.0122
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.06
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: -0.121155
+        Y: 16.0418
+        Z: 1.97514
+      Name: Current View
+      Near Clip Distance: 0.01
+      Pitch: 0.674801
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 4.72539
+    Saved:
+      - Class: rviz/Orbit
+        Distance: 19.3545
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.06
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Focal Point:
+          X: 190.696
+          Y: 54.9661
+          Z: 45.5781
+        Name: Orbit
+        Near Clip Distance: 0.01
+        Pitch: 0.329796
+        Target Frame: <Fixed Frame>
+        Value: Orbit (rviz)
+        Yaw: 4.50318
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1176
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd00000004000000000000016a0000037cfc020000000cfb000000100044006900730070006c00610079007301000000fe00000246000000dd00fffffffb0000000a00560069006500770073010000034a00000130000000b000fffffffb0000001200530065006c0065006300740069006f006e0200000604000002e40000017c0000009bfb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000a0049006d0061006700650000000144000002a20000000000000000fb0000000c00430061006d0065007200610100000464000000160000000000000000fb00000014004600720061006d006500430075006200650073020000095b0000005d00000245000001d200000001000001a0000002d7fc0200000007fb000000100043004e004e005f00700072006500640000000129000000a80000000000000000fb000000160050006f0070005f0070006f006c00790067006f006e00000001d70000006f0000000000000000fb000000160050006f0070005f0070006f006c00790067006f006e0100000362000001180000000000000000fb000000100043004e004e005f00700072006500640000000391000000e90000000000000000fb00000012007200610077005f0069006d006100670065010000023c000001fa0000000000000000fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000747000000d0fc0100000007fb00000012005200610077005f0069006d0061006700650100000000000002710000008000fffffffb00000014005300750070006500720070006900780065006c01000002770000025f0000007a00fffffffb00000020005200610077005f005300650067006d0065006e0074006100740069006f006e01000004dc0000026b000000b500fffffffb00000012005200610077005f0069006d00610067006501000004db0000026c0000000000000000fb00000018005300650067006d0065006e0074006100740069006f006e01000006b6000000910000000000000000fb0000000a00560069006500770073030000004e00000080000002e100000197fb000000140045006400670065005f006d00610074006300680000000000ffffffff000000000000000000000003000007470000003ffc0100000002fb0000000800540069006d0065000000000000000747000002f600fffffffb0000000800540069006d00650100000000000004500000000000000000000005d70000037c00000004000000040000000800000008fc00000002000000020000000000000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Raw_Segmentation:
+    collapsed: false
+  Raw_image:
+    collapsed: false
+  Selection:
+    collapsed: false
+  Superpixel:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1863
+  X: 1977
+  Y: 24

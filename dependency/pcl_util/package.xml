@@ -1,0 +1,31 @@
+<package format="2">
+    <name>pcl_util</name>
+    <version>0.1.1</version>
+    <description>
+        Mish-mash of stuff useful for working with pcl
+        see geom_cast for cool point and rotation conversion
+    </description>
+
+    <maintainer email="dimatura@cmu.edu">Daniel Maturana</maintainer>
+
+    <license>Carnegie Mellon University 2015</license>
+
+    <!--<url type="website">http://ros.org/wiki/pcl_util</url>-->
+    <!-- <url type="bugtracker"></url> -->
+
+    <author email="dimatura@cmu.edu">Daniel Maturana</author>
+
+    <!-- Dependencies which this package needs to build itself. -->
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <!-- Dependencies needed to compile this package. -->
+    <depend>cmake_modules</depend>
+    <depend>geom_cast</depend>
+    <depend>geom_cast_extra</depend>
+    <depend>libopencv-dev</depend>
+    <depend>libpcl-all-dev</depend>
+    <depend>libpcl-all</depend>
+    <depend>pcl_conversions</depend>
+    <depend>pcl_ros</depend>
+    <depend>roscpp</depend>
+</package>

@@ -1,0 +1,5 @@
+bin
+build
+generate_ycm_conf.py
+.ycm_extra_conf.py
+.ycm_extra_conf.pyc

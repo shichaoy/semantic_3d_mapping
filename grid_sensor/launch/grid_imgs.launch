@@ -1,0 +1,58 @@
+<!-- -->
+<launch>
+    <param name="use_sim_time" value="false" />   <!--use computer time-->
+
+    # launch rviz
+   <node pkg="rviz" type="rviz" name="rviz" args="-d $(find grid_sensor)/rviz/grid_crf.rviz"/>
+    
+    <!-- params required by scrolling strategies 30  30 5-->
+    <param name="scrolling_strategies/scroll_dist_thresh_x" value="100" />
+    <param name="scrolling_strategies/scroll_dist_thresh_y" value="100" />
+    <param name="scrolling_strategies/scroll_dist_thresh_z" value="40" />
+    <param name="scrolling_strategies/target_sensor_to_center_x" value="0"/>
+    <param name="scrolling_strategies/target_sensor_to_center_y" value="-2.0"/> # height  in meters,  camera position in the occupancy grid
+    <param name="scrolling_strategies/target_sensor_to_center_z" value="12"/> # sensor to box center distance, in meters, positve means back
+
+    # also change calibration !!! in _imgs.cpp
+    <param name="kitti/img_root_folder" value= "$(find grid_sensor)/data_kitti/"  />
+    <param name="kitti/raw_img_folder"   value="rgb_img/"/>
+    <param name="depth_scaling" value="2000"/>  # pay attention to scaling, for cnn's image use 1000, for elas depth_img use 2000
+    <param name="kitti/depth_img_folder" value="depth_img/"/>
+    <param name="kitti/trajectory_file"  value="CameraTrajectory.txt"/>
+    
+    <param name="kitti/label_root_folder" value="$(find grid_sensor)/data_kitti/" />
+    <param name="kitti/label_bin_folder" value="label_binary/" />
+    <param name="kitti/label_img_folder" value="label_visual/" />
+    <param name="kitti/evaluation_img_list" value="evaluatioList.txt" />    
+    <param name="kitti/superpixel_bin_folder" value="superpixel_bin/" />
+    <param name="kitti/superpixel_img_folder" value="superpixel_img/" />    
+    <param name="kitti/reproj_label_folder" value="crf_3d_reproj/" />
+    
+    <rosparam file="$(find grid_sensor)/params/kitti_crf_3d.yaml" command="load"/>
+     
+    <param name="Grid_SG_BARELY_FREE" value="117"/>
+    <param name="Grid_SG_BARELY_OCCUPIED" value="135"/> # middle 125
+    <param name="Grid_SG_BELIEF_UPDATE_POS" value="8"/>
+    <param name="Grid_SG_BELIEF_UPDATE_NEG" value="1"/>
+    
+    # don't update too far noisy points
+    <param name="depth_ignore_thres" value="20.0"/>
+     
+    <node pkg="grid_sensor" type="stereo_img_node" name="stereo_img_node" output="screen">
+      <remap from="/raw_img_rgb" to ="/kitti/left/image_raw"/>
+      <param name="pointCloudFrame" value="/camera_rgb_optical_frame" />
+      <param name="worldFrame" value="/world" />
+      <param name="gridResolution" value="0.1" />  <!-- 0.05 -->
+    </node>
+    
+    <node pkg="gridmapping2" type="gridmapping2_shared_gridmap_node" name="shared_gridmap" output="screen">
+      <param name="gridDimensionX" value="250"/>
+      <param name="gridDimensionY" value="250"/>
+      <param name="gridDimensionZ" value="80"/> #40 height
+      <param name="gridResolution" value="0.1"/> #0.5 too small may have alising effect
+      <param name="gridIdentifier" value="shared_grid_map"/>
+    </node>
+           
+    
+    
+</launch>

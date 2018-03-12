@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package>
+  <name>geom_cast</name>
+  <version>0.0.0</version>
+  <description>
+     Clean conversion between different point and rotation types used throughout ROS.
+     Conversion is type-safe and has NO performance penalty relative to manual conversion.
+     Supports Eigen, tf, pcl, geometry_msgs and OpenCV points.
+  </description>
+
+  <maintainer email="dimatura@cmu.edu">Daniel Maturana</maintainer>
+
+  <license>Carnegie Mellon University 2015</license>
+
+  <!-- Url tags are optional, but mutiple are allowed, one per tag -->
+  <!-- Optional attribute type can be: website, bugtracker, or repository -->
+  <!-- Example: -->
+  <!-- <url type="website">http://wiki.ros.org/geom_cast</url> -->
+
+  <author email="dimatura@cmu.edu">Daniel Maturana</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>cmake_modules</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>tf</run_depend>
+
+  <export>
+  </export>
+</package>

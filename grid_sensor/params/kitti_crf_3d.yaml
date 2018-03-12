@@ -1,0 +1,14 @@
+use_crf_optimize: true
+crf_iterations  : 5
+use_high_order  : true
+save_proj_imgs  : false
+use_hierarchical_inference: true
+
+smooth_xy_stddev: 0.2
+smooth_z_stddev: 0.2
+smooth_weight: 3
+
+appear_xy_stddev: 0.2
+appear_z_stddev: 0.2
+appear_rgb_stddev: 8
+appear_weight: 8
