@@ -10,7 +10,7 @@ This package builds a semantic 3D grid map using stereo or RGBD input. It is sui
 
 # Installation
 ### Prerequisites
-This code contains several ros packages. We test it in **ROS indigo/kinect + OpenCV 2.4**. Create or use existing a ros workspace.
+This code contains several ros packages. We have test in **ROS indigo/kinect**. Create or use existing a ros workspace.
 ```bash
 mkdir -p ~/mapping_3d/src
 cd ~/mapping_3d/src

@@ -14,7 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 find_package(Eigen REQUIRED) 
-find_package(OpenCV 2.4 REQUIRED)
+find_package(OpenCV REQUIRED)
 
 ###################################
 ## catkin specific configuration ##
@@ -67,6 +67,7 @@ add_library( img_proc_lib
 add_library( superpixel_lib
 	libs/superpixel.cpp
 )
+target_link_libraries( superpixel_lib ${OpenCV_LIBRARIES} )
 
 target_link_libraries( ${PROJECT_NAME}  superpixel_lib)
 
