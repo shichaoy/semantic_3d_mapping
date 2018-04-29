@@ -1,0 +1,35 @@
+My CRF3d label:
+
+label		index		R	G	B
+---------------------------------------------------
+building	1		128	0	0	Red
+sky		2		128	128	128	Grey
+road		3		128	64	128	Pink
+vegetation	4		128	128	0	Dark yellow
+sidewalk/pave	5		0	0	192	Blue
+car		6		64	0	128	Purple
+pedestrian	7		64	64	0	Yellow-brown
+cyclist		8		0	128	192	Light blue
+signage		9		192	128	128	Salmon
+fence/wall	10		64	64 	128	Grey-purple
+pole		11		192	192	128	Light yellow
+other		0		0	0	0
+
+
+
+DilatedCNN label:
+
+label		index		R	G	B
+---------------------------------------------------
+building	1		128	0	0
+vegetation	2		128	128	0
+sky		3		128	128	128
+car		4		64	0	128
+signate		5		192	128	128
+road		6		128	64	128
+pedestrian	7		64	64	0
+fence		8		64	64 	128
+pole		9		192	192	128
+sidewalk	10		0	0	192
+cyclist		11		0	128	192
+void/other	0		0	0	0

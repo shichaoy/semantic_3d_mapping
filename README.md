@@ -43,7 +43,7 @@ Some mode parameters can be changed in ```grid_imgs.launch``` and ```grid_sensor
 
 
 # Notes #
-1. This package only contains grid mapping, all the pre-processing steps are not included.
+1. This package only contains grid mapping, all the pre-processing steps are not included. See preprocess_data/README.md for details.
    
    Elas is used for computing dense disparity/depth. Dilation CNN is used for 2D semantic segmentation.
    

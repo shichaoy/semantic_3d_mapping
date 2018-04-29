@@ -156,7 +156,6 @@ void read_superpixel_img(const std::string superpixel_img_file, std::vector<Supe
 
 void read_superpixel_bin(const std::string superpixel_bin, std::vector<SuperPixel*>& all_superpixels,int im_width,int im_height) {
 	// TODO move to config
-// 	int im_width = 1226; int im_height = 370;
 	int max_sp_num = 170; int col_num = 2077; //72   // match max_sp_num in read_superpixel_img
 	
 	int16_t* frame_superpixels = get_frame_superpixels(max_sp_num, col_num);//new int16_t[max_sp_num*col_num];
