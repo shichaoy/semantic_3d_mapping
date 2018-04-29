@@ -2,6 +2,10 @@
 1) Type 'cmake .'
 2) Type 'make'
 
+To batch process kitti data, run './stereoslic aa.png -s 150'    see main.cpp interfacing part for detais.
+
+-------No use anymore, from original readme------
+
 // Run
 Usage: stereoslic [options] imageL.png [dispImageL.png [dispImageR.png [imageR.png]]]
 
