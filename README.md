@@ -38,16 +38,21 @@ roslaunch grid_sensor grid_imgs.launch
 ```
 You will see point cloud in Rviz. It also projects 3D grid onto 2D image for evaluation, stored at ```grid_sensor/dataset/crf_3d_reproj ```.
 
-Some mode parameters can be changed in ```grid_imgs.launch``` and ```grid_sensor/params/ ```
-
 
 
 # Notes #
-1. This package only contains grid mapping, all the pre-processing steps are not included. See ```preprocess_data/README.md``` for details.
+1. Some mode parameters can be changed in ```grid_sensor/params/kitti_crf_3d.yaml ``` and ```grid_imgs.launch```
+
+	if ```use_crf_optimize = false```, no 3D CRF optimization, 2D label is directly transferred to 3D.
+
+	if ```use_crf_optimize = true, use_high_order = false ``` dense 3D CRF optimization runs.
+
+	if ```use_crf_optimize = true, use_high_order = true ``` High order 3D CRF optimization runs. Superpixel data needs to be provided
+
+2. This package only contains grid mapping, all the pre-processing steps are not included. See ```preprocess_data/README.md``` for details.
    
    Elas is used for computing dense disparity/depth. Dilation CNN is used for 2D semantic segmentation.
    
    SLIC is used for generating superpixel.  ORB SLAM is used to estimate camera pose.
    
-2. If Grid sensor memory is not initialized properly, delete ```/dev/shm/sem.shared_grid_map...```
-
+3. If Grid sensor memory is not initialized properly, delete ```/dev/shm/sem.shared_grid_map...```
