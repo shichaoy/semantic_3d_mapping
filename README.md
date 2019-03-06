@@ -23,6 +23,8 @@ git clone git@github.com:shichaoy/semantic_3d_mapping.git
 cd semantic_3d_mapping/grid_sensor
 sh download_data.sh
 ```
+if the download link breaks, please download [here](https://drive.google.com/open?id=1g0aR6qx8jCgkScPdA6nRt2BDWBRZ24Rb) and follow sh file to process it. Will fix it later.
+
 If ```wget``` not installed, ```sudo apt-get install wget ```
 
 ### Compile
