@@ -1,11 +1,11 @@
 # Semantic 3D mapping #
 This package builds a semantic 3D grid map using stereo or RGBD input. It is suitable for large scale online mapping. The grid semantic label is optimized through hierarchical CRF.
 
-**Authors:** [Shichao Yang](http://www.frc.ri.cmu.edu/~syang/), Yulan Huang
+**Authors:** [Shichao Yang](https://github.com/shichaoy), Yulan Huang
 
 **Related Paper:**
 
-* **Semantic 3D Occupancy Mapping through Efficient High Order CRFs**, IROS 2017, S. Yang, Y. Huang, S. Scherer  [**PDF**](http://www.frc.ri.cmu.edu/~syang/Publications/iros_2017.pdf)
+* **Semantic 3D Occupancy Mapping through Efficient High Order CRFs**, IROS 2017, S. Yang, Y. Huang, S. Scherer  [**PDF**](https://arxiv.org/pdf/1707.07388.pdf)
 
 
 # Installation
@@ -58,3 +58,5 @@ You will see point cloud in Rviz. It also projects 3D grid onto 2D image for eva
    SLIC is used for generating superpixel.  ORB SLAM is used to estimate camera pose.
    
 3. If Grid sensor memory is not initialized properly, delete ```/dev/shm/sem.shared_grid_map...```
+
+4. Our used ground truth image annotations are in ```preprocess_data/gt_label/``` Refer to paper experiments for more details.
